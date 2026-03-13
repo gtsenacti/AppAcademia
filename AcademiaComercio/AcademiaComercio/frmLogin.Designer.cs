@@ -36,24 +36,26 @@
             pictureBox1 = new PictureBox();
             btnEntrar = new Button();
             btnSair = new Button();
-            button1 = new Button();
+            btnCadastrarUsuario = new Button();
             panel1 = new Panel();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // txtUsuario
             // 
+            txtUsuario.Font = new Font("Arial", 12F);
             txtUsuario.Location = new Point(220, 116);
             txtUsuario.Name = "txtUsuario";
-            txtUsuario.Size = new Size(246, 23);
+            txtUsuario.Size = new Size(246, 26);
             txtUsuario.TabIndex = 1;
             // 
             // txtSenha
             // 
+            txtSenha.Font = new Font("Arial", 12F);
             txtSenha.Location = new Point(220, 173);
             txtSenha.Name = "txtSenha";
             txtSenha.PasswordChar = '*';
-            txtSenha.Size = new Size(246, 23);
+            txtSenha.Size = new Size(246, 26);
             txtSenha.TabIndex = 2;
             // 
             // lblTitulo
@@ -104,16 +106,17 @@
             // 
             // btnEntrar
             // 
-            btnEntrar.BackColor = Color.MediumSeaGreen;
+            btnEntrar.BackColor = Color.Honeydew;
             btnEntrar.Cursor = Cursors.Hand;
             btnEntrar.FlatAppearance.BorderColor = Color.DarkGreen;
             btnEntrar.FlatAppearance.BorderSize = 2;
             btnEntrar.FlatStyle = FlatStyle.Flat;
             btnEntrar.Font = new Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnEntrar.Image = Properties.Resources.entrar;
             btnEntrar.ImageAlign = ContentAlignment.MiddleLeft;
-            btnEntrar.Location = new Point(304, 237);
+            btnEntrar.Location = new Point(304, 224);
             btnEntrar.Name = "btnEntrar";
-            btnEntrar.Size = new Size(162, 49);
+            btnEntrar.Size = new Size(162, 62);
             btnEntrar.TabIndex = 7;
             btnEntrar.Text = "Entrar";
             btnEntrar.TextAlign = ContentAlignment.MiddleRight;
@@ -122,36 +125,42 @@
             // 
             // btnSair
             // 
-            btnSair.BackColor = Color.LightCoral;
+            btnSair.BackColor = Color.MistyRose;
             btnSair.Cursor = Cursors.Hand;
             btnSair.FlatAppearance.BorderColor = Color.Red;
             btnSair.FlatAppearance.BorderSize = 2;
             btnSair.FlatStyle = FlatStyle.Flat;
             btnSair.Font = new Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnSair.ForeColor = SystemColors.ActiveCaptionText;
-            btnSair.Location = new Point(28, 237);
+            btnSair.Image = Properties.Resources.sair;
+            btnSair.ImageAlign = ContentAlignment.MiddleLeft;
+            btnSair.Location = new Point(28, 224);
             btnSair.Name = "btnSair";
-            btnSair.Size = new Size(102, 49);
+            btnSair.Size = new Size(111, 62);
             btnSair.TabIndex = 8;
             btnSair.Text = "Sair";
             btnSair.TextAlign = ContentAlignment.MiddleRight;
             btnSair.UseVisualStyleBackColor = false;
+            btnSair.Click += btnSair_Click;
             // 
-            // button1
+            // btnCadastrarUsuario
             // 
-            button1.BackColor = Color.LightSkyBlue;
-            button1.Cursor = Cursors.Hand;
-            button1.FlatAppearance.BorderColor = Color.MediumBlue;
-            button1.FlatAppearance.BorderSize = 2;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(136, 237);
-            button1.Name = "button1";
-            button1.Size = new Size(162, 49);
-            button1.TabIndex = 9;
-            button1.Text = "Cadastrar";
-            button1.TextAlign = ContentAlignment.MiddleRight;
-            button1.UseVisualStyleBackColor = false;
+            btnCadastrarUsuario.BackColor = Color.LightSkyBlue;
+            btnCadastrarUsuario.Cursor = Cursors.Hand;
+            btnCadastrarUsuario.FlatAppearance.BorderColor = Color.MediumBlue;
+            btnCadastrarUsuario.FlatAppearance.BorderSize = 2;
+            btnCadastrarUsuario.FlatStyle = FlatStyle.Flat;
+            btnCadastrarUsuario.Font = new Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnCadastrarUsuario.Image = Properties.Resources.cadastrar;
+            btnCadastrarUsuario.ImageAlign = ContentAlignment.MiddleLeft;
+            btnCadastrarUsuario.Location = new Point(145, 224);
+            btnCadastrarUsuario.Name = "btnCadastrarUsuario";
+            btnCadastrarUsuario.Size = new Size(153, 62);
+            btnCadastrarUsuario.TabIndex = 9;
+            btnCadastrarUsuario.Text = "Cadastrar";
+            btnCadastrarUsuario.TextAlign = ContentAlignment.MiddleRight;
+            btnCadastrarUsuario.UseVisualStyleBackColor = false;
+            btnCadastrarUsuario.Click += btnCadastrarUsuario_Click;
             // 
             // panel1
             // 
@@ -167,7 +176,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             ClientSize = new Size(489, 304);
-            Controls.Add(button1);
+            Controls.Add(btnCadastrarUsuario);
             Controls.Add(btnSair);
             Controls.Add(btnEntrar);
             Controls.Add(pictureBox1);
@@ -177,7 +186,9 @@
             Controls.Add(txtSenha);
             Controls.Add(txtUsuario);
             Controls.Add(panel1);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "frmLogin";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Aplicativo Academia - Tela Login";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
@@ -193,7 +204,7 @@
         private PictureBox pictureBox1;
         private Button btnEntrar;
         private Button btnSair;
-        private Button button1;
+        private Button btnCadastrarUsuario;
         private Panel panel1;
     }
 }
