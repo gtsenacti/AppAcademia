@@ -44,6 +44,8 @@
             rbMatricula = new RadioButton();
             rbNomeColaborador = new RadioButton();
             txtBuscarColaborador = new TextBox();
+            ttAtualizar = new ToolTip(components);
+            ttApagar = new ToolTip(components);
             ttSalvar = new ToolTip(components);
             ((System.ComponentModel.ISupportInitialize)dgvCadastrarColaborador).BeginInit();
             gbCadastroColaborador.SuspendLayout();
@@ -88,6 +90,7 @@
             btnApagar.Name = "btnApagar";
             btnApagar.Size = new Size(75, 61);
             btnApagar.TabIndex = 10;
+            ttApagar.SetToolTip(btnApagar, "Apagar registro do colaborador");
             btnApagar.UseVisualStyleBackColor = false;
             // 
             // btnEditar
@@ -101,6 +104,7 @@
             btnEditar.Name = "btnEditar";
             btnEditar.Size = new Size(75, 61);
             btnEditar.TabIndex = 9;
+            ttAtualizar.SetToolTip(btnEditar, "Atualizar registro do colaborador");
             btnEditar.UseVisualStyleBackColor = false;
             // 
             // btnSalvar
@@ -114,6 +118,7 @@
             btnSalvar.Name = "btnSalvar";
             btnSalvar.Size = new Size(119, 61);
             btnSalvar.TabIndex = 8;
+            ttSalvar.SetToolTip(btnSalvar, "Salvar registro do colaborador");
             btnSalvar.UseVisualStyleBackColor = false;
             // 
             // txtSenha
@@ -206,18 +211,27 @@
             txtBuscarColaborador.Size = new Size(281, 26);
             txtBuscarColaborador.TabIndex = 0;
             // 
+            // ttAtualizar
+            // 
+            ttAtualizar.ToolTipIcon = ToolTipIcon.Info;
+            ttAtualizar.ToolTipTitle = "Atualizar cadastro";
+            // 
+            // ttApagar
+            // 
+            ttApagar.ToolTipIcon = ToolTipIcon.Info;
+            ttApagar.ToolTipTitle = "Apagar colaborador";
+            // 
             // ttSalvar
             // 
-            ttSalvar.IsBalloon = true;
             ttSalvar.ToolTipIcon = ToolTipIcon.Info;
-            ttSalvar.ToolTipTitle = "Salvar cadastro";
+            ttSalvar.ToolTipTitle = "Salvar colaborador";
             // 
             // frmCadastro
             // 
             AutoScaleDimensions = new SizeF(9F, 18F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
-            ClientSize = new Size(706, 516);
+            ClientSize = new Size(706, 484);
             Controls.Add(groupBox1);
             Controls.Add(gbCadastroColaborador);
             Controls.Add(dgvCadastrarColaborador);
@@ -252,6 +266,8 @@
         private RadioButton rbMatricula;
         private RadioButton rbNomeColaborador;
         private TextBox txtBuscarColaborador;
+        private ToolTip ttAtualizar;
+        private ToolTip ttApagar;
         private ToolTip ttSalvar;
     }
 }
