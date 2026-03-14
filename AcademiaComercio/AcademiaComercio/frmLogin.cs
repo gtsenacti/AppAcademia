@@ -23,6 +23,9 @@ namespace AcademiaComercio
             else
             {
                 MessageBox.Show("Usuário ou senha incorretos. Tente novamente!");
+
+                txtUsuario.Text = "";
+                txtSenha.Text = "";
             }
         }
 

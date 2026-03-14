@@ -19,11 +19,6 @@ namespace AcademiaComercio
             InitializeComponent();
         }
 
-        private void iniciarJanela()
-        {
-            lblFuncionario.Text = "Olá " + funcionario + "!";
-        }
-
         private void frmMenu_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
@@ -32,6 +27,41 @@ namespace AcademiaComercio
         private void frmMenu_Load(object sender, EventArgs e)
         {
             iniciarJanela();
+        }
+
+        private void iniciarJanela()
+        {
+            lblFuncionario.Text = "Olá " + funcionario + "!";
+        }
+
+        private void btmMatriculas_Click(object sender, EventArgs e)
+        {
+            frmMatricula fm = new frmMatricula();
+            fm.ShowDialog();
+        }
+
+        private void btnClientes_Click(object sender, EventArgs e)
+        {
+            frmCliente fc = new frmCliente();
+            fc.ShowDialog();
+        }
+
+        private void btnServicos_Click(object sender, EventArgs e)
+        {
+            frmServicos fs = new frmServicos();
+            fs.ShowDialog();
+        }
+
+        private void btnFaturamento_Click(object sender, EventArgs e)
+        {
+            frmFaturamento fat = new frmFaturamento();
+            fat.ShowDialog();
+        }
+
+        private void btnProdutos_Click(object sender, EventArgs e)
+        {
+            frmProdutos fp = new frmProdutos();
+            fp.ShowDialog();
         }
     }
 }

@@ -18,3 +18,8 @@ C:\Users\13993\Documents\GitHub\AppAcademia\AcademiaComercio\AcademiaComercio\ob
 C:\Users\13993\Documents\GitHub\AppAcademia\AcademiaComercio\AcademiaComercio\obj\Debug\net9.0-windows\AcademiaComercio.Properties.Resources.resources
 C:\Users\13993\Documents\GitHub\AppAcademia\AcademiaComercio\AcademiaComercio\obj\Debug\net9.0-windows\AcademiaComercio.sourcelink.json
 C:\Users\13993\Documents\GitHub\AppAcademia\AcademiaComercio\AcademiaComercio\obj\Debug\net9.0-windows\AcademiaComercio.frmCadastro.resources
+C:\Users\13993\Documents\GitHub\AppAcademia\AcademiaComercio\AcademiaComercio\obj\Debug\net9.0-windows\AcademiaComercio.frmCliente.resources
+C:\Users\13993\Documents\GitHub\AppAcademia\AcademiaComercio\AcademiaComercio\obj\Debug\net9.0-windows\AcademiaComercio.frmFaturamento.resources
+C:\Users\13993\Documents\GitHub\AppAcademia\AcademiaComercio\AcademiaComercio\obj\Debug\net9.0-windows\AcademiaComercio.frmMatricula.resources
+C:\Users\13993\Documents\GitHub\AppAcademia\AcademiaComercio\AcademiaComercio\obj\Debug\net9.0-windows\AcademiaComercio.frmProdutos.resources
+C:\Users\13993\Documents\GitHub\AppAcademia\AcademiaComercio\AcademiaComercio\obj\Debug\net9.0-windows\AcademiaComercio.frmServicos.resources

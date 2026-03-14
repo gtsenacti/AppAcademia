@@ -80,6 +80,7 @@
             btnClientes.FlatStyle = FlatStyle.Flat;
             btnClientes.Font = new Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnClientes.ForeColor = Color.Black;
+            btnClientes.Image = Properties.Resources.clientes;
             btnClientes.ImageAlign = ContentAlignment.MiddleLeft;
             btnClientes.Location = new Point(12, 258);
             btnClientes.Name = "btnClientes";
@@ -88,6 +89,7 @@
             btnClientes.Text = "Clientes";
             btnClientes.TextAlign = ContentAlignment.MiddleRight;
             btnClientes.UseVisualStyleBackColor = false;
+            btnClientes.Click += btnClientes_Click;
             // 
             // btnServicos
             // 
@@ -95,6 +97,7 @@
             btnServicos.Cursor = Cursors.Hand;
             btnServicos.FlatStyle = FlatStyle.Flat;
             btnServicos.Font = new Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnServicos.Image = Properties.Resources.servicos;
             btnServicos.ImageAlign = ContentAlignment.MiddleLeft;
             btnServicos.Location = new Point(228, 258);
             btnServicos.Name = "btnServicos";
@@ -103,6 +106,7 @@
             btnServicos.Text = "Serviços";
             btnServicos.TextAlign = ContentAlignment.MiddleRight;
             btnServicos.UseVisualStyleBackColor = false;
+            btnServicos.Click += btnServicos_Click;
             // 
             // btnFaturamento
             // 
@@ -110,6 +114,7 @@
             btnFaturamento.Cursor = Cursors.Hand;
             btnFaturamento.FlatStyle = FlatStyle.Flat;
             btnFaturamento.Font = new Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnFaturamento.Image = Properties.Resources.faturamento;
             btnFaturamento.ImageAlign = ContentAlignment.MiddleLeft;
             btnFaturamento.Location = new Point(447, 258);
             btnFaturamento.Name = "btnFaturamento";
@@ -118,6 +123,7 @@
             btnFaturamento.Text = "Faturamento";
             btnFaturamento.TextAlign = ContentAlignment.MiddleRight;
             btnFaturamento.UseVisualStyleBackColor = false;
+            btnFaturamento.Click += btnFaturamento_Click;
             // 
             // lbl2026
             // 
@@ -136,6 +142,7 @@
             btnProdutos.Cursor = Cursors.Hand;
             btnProdutos.FlatStyle = FlatStyle.Flat;
             btnProdutos.Font = new Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnProdutos.Image = Properties.Resources.produtos;
             btnProdutos.ImageAlign = ContentAlignment.MiddleLeft;
             btnProdutos.Location = new Point(447, 133);
             btnProdutos.Name = "btnProdutos";
@@ -144,6 +151,7 @@
             btnProdutos.Text = "Produtos";
             btnProdutos.TextAlign = ContentAlignment.MiddleRight;
             btnProdutos.UseVisualStyleBackColor = false;
+            btnProdutos.Click += btnProdutos_Click;
             // 
             // btmMatriculas
             // 
@@ -152,6 +160,7 @@
             btmMatriculas.FlatStyle = FlatStyle.Flat;
             btmMatriculas.Font = new Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btmMatriculas.ForeColor = Color.Black;
+            btmMatriculas.Image = Properties.Resources.matricula;
             btmMatriculas.ImageAlign = ContentAlignment.MiddleLeft;
             btmMatriculas.Location = new Point(12, 133);
             btmMatriculas.Name = "btmMatriculas";
@@ -160,6 +169,7 @@
             btmMatriculas.Text = "Matrículas";
             btmMatriculas.TextAlign = ContentAlignment.MiddleRight;
             btmMatriculas.UseVisualStyleBackColor = false;
+            btmMatriculas.Click += btmMatriculas_Click;
             // 
             // lblFuncionario
             // 

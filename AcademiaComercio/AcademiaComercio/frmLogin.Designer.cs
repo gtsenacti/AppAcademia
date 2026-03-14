@@ -114,7 +114,7 @@
             btnEntrar.Font = new Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnEntrar.Image = Properties.Resources.entrar;
             btnEntrar.ImageAlign = ContentAlignment.MiddleLeft;
-            btnEntrar.Location = new Point(304, 224);
+            btnEntrar.Location = new Point(304, 230);
             btnEntrar.Name = "btnEntrar";
             btnEntrar.Size = new Size(162, 62);
             btnEntrar.TabIndex = 7;
@@ -134,7 +134,7 @@
             btnSair.ForeColor = SystemColors.ActiveCaptionText;
             btnSair.Image = Properties.Resources.sair;
             btnSair.ImageAlign = ContentAlignment.MiddleLeft;
-            btnSair.Location = new Point(28, 224);
+            btnSair.Location = new Point(28, 230);
             btnSair.Name = "btnSair";
             btnSair.Size = new Size(111, 62);
             btnSair.TabIndex = 8;
@@ -153,7 +153,7 @@
             btnCadastrarUsuario.Font = new Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnCadastrarUsuario.Image = Properties.Resources.cadastrar;
             btnCadastrarUsuario.ImageAlign = ContentAlignment.MiddleLeft;
-            btnCadastrarUsuario.Location = new Point(145, 224);
+            btnCadastrarUsuario.Location = new Point(145, 230);
             btnCadastrarUsuario.Name = "btnCadastrarUsuario";
             btnCadastrarUsuario.Size = new Size(153, 62);
             btnCadastrarUsuario.TabIndex = 9;
